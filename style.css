@@ -1,0 +1,131 @@
+@font-face {
+  font-family: holen;
+  src: url(./Holen\ Vintage.otf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  background: #d6e5fc;
+  color: #1b1a3d;
+  transition: background-color 0.5s ease-in-out, color 0.3s ease-in-out;
+}
+
+header {
+  background: url(https://cdn.pixabay.com/photo/2016/11/29/13/01/stars-1869692_1280.jpg);
+  color: #afaaf7;
+  text-align: center;
+  padding: 20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  font-family: holen;
+}
+header button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 7px;
+  background-color: #37367a;
+  color: #adc5fa;
+  font-weight: bold;
+}
+
+section {
+  padding: 20px;
+  margin: 10px auto;
+  height: 100vh;
+}
+
+div {
+  width: 100%;
+}
+
+img {
+  border-radius: 10px;
+  height: 400px;
+}
+
+#sobre {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+h2 {
+  margin-bottom: 10px;
+  font-size: 3em;
+}
+
+.projeto {
+  background-color: #5366a360;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  width: 70%;
+  height: 200px;
+}
+a {
+  text-decoration: none;
+  color: #adc5fa;
+  transition: 0.2s;
+}
+footer {
+  background: url(https://cdn.pixabay.com/photo/2016/11/29/13/01/stars-1869692_1280.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #adc5fa;
+  transition: 0.2s;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+a:hover {
+  color: #6762aa;
+}
+
+/*--------------MODO ESCURO-----------*/
+
+.dark-theme {
+  background-color: #1a1e50;
+  color: #c0bcfa;
+}
+
+.dark-theme header {
+  background-color: #adc5fa;
+  color: #adc5fa;
+}
+
+.dark-theme header button {
+  background-color: #2f216e;
+  color: #adc5fa;
+}
+
+.dark-theme .projeto {
+  background-color: #353a83;
+}
+
+@media (max-width: 420px) {
+  #sobre {
+    flex-direction: column;
+  }
+  div {
+    margin: 0;
+    height: 10%;
+    width: 100%;
+  }
+  img {
+    width: 80%;
+    height: 30%;
+  }
+  .projeto {
+    height: 30%;
+    width: 100%;
+  }
+}
